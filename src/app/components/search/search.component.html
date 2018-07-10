@@ -1,0 +1,34 @@
+<div class="container">
+    <br>
+    <table class="table table-hover table-dark">
+        <tr class="bg-success">
+            <th scope="row">Mobi imperdiet, sapien aconsequat sollicitudin</th>
+
+        </tr>
+    </table>
+
+
+
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Gender</th>
+                <th scope="col">Name</th>
+                <th scope="col">Height</th>
+                <th scope="col">Mass</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr *ngFor="let per of people">
+                <th>{{per.gender}}</th>
+                <td>{{per.name}}</td>
+                <td>{{per.height}}</td>
+                <td>{{per.mass}}</td>
+
+            </tr>
+
+        </tbody>
+    </table>
+
+</div>

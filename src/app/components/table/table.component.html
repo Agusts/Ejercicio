@@ -1,0 +1,60 @@
+<div class="container">
+    <br>
+    <table class="table table-hover table-dark">
+        <tr class="bg-success">
+            <th scope="row">Mobi imperdiet, sapien aconsequat sollicitudin</th>
+
+        </tr>
+    </table>
+    <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" (keyup.enter)="buscarPeoples(buscartext.value)" #buscartext>
+        <button (click)="buscarPeoples(buscartext.value)" class="btn btn-outline-success my-2 my-sm-0" type="button">Search</button>
+    </form>
+
+
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Gender</th>
+                <th scope="col">Name</th>
+                <th scope="col">Height</th>
+                <th scope="col">Mass</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr *ngFor="let per of people">
+                <th>{{per.gender}}</th>
+                <td>{{per.name}}</td>
+                <td>{{per.height}}</td>
+                <td>{{per.mass}}</td>
+
+            </tr>
+
+        </tbody>
+    </table>
+    <br>
+    <h1>Search</h1>
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Gender</th>
+                <th scope="col">Name</th>
+                <th scope="col">Height</th>
+                <th scope="col">Mass</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr *ngFor="let per of pers">
+                <th>{{per.gender}}</th>
+                <td>{{per.name}}</td>
+                <td>{{per.height}}</td>
+                <td>{{per.mass}}</td>
+
+            </tr>
+
+        </tbody>
+    </table>
+
+</div>
